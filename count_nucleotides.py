@@ -3,7 +3,6 @@ import os
 
 def calc_nucelotide(dataset, A, C, G, T):
     """Calculate ACGT in dataset"""
-
     for i in dataset:
         if i == "A":
             A+=1
