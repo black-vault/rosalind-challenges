@@ -1,8 +1,8 @@
 import os
 
 
-def calc_nucelotide(dataset, A, C, G, T):
-    """Calculate ACGT in dataset"""
+def count_nucelotide(dataset, A, C, G, T):
+    """Count ACGT in dataset"""
     for i in dataset:
         if i == "A":
             A+=1
@@ -28,7 +28,7 @@ def main():
     C = 0
     G = 0
     T = 0
-    A, C, G, T = calc_nucelotide(dataset, A, C, G, T)
+    A, C, G, T = count_nucelotide(dataset, A, C, G, T)
     print(A,C,G,T)
 
 
